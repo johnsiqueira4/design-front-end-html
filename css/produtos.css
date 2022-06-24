@@ -10,9 +10,19 @@
   list-style: none;
 }
 
+body {
+  padding-top: 100px;
+}
+
 /* início do cabeçalho*/
 header {
   background: coral;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
 }
 
 header nav {
@@ -47,6 +57,7 @@ main ul {
   height: 200px;
   background: black;
   padding: 20px;
+  margin-bottom: 50px;
 }
 @media (max-width: 1024px) {
   main ul {
@@ -83,17 +94,58 @@ main ul li {
   }
 }
 
-.pai {
-  width: 500px;
-  height: 500px;
-  border: 3px solid #000;
-  margin: 0 auto;
+.video {
+  width: 320px;
+  height: 200px;
+  border: 1px solid rgb(253, 0, 0);
+  margin: 0 auto 30px auto;
+  position: relative;
+  z-index: 0;
+  opacity: 0.5;
+  filter: grayscale();
+  transition: 1s;
 }
-.filha {
+
+.video:hover {
+  opacity: 1;
+  filter: none;
+  border-radius: 100px;
+  background: blue;
+}
+
+.play {
   width: 100px;
   height: 100px;
-  background: gray;
+  background: #c702ef40;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 100px;
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: calc(
+    50% - 50px
+  ); /* para centralizar, 50% fica no meio - metade da altura do elemento*/
+  left: calc(
+    50% - 50px
+  ); /* para centralizar, 50% fica no meio - metade da largura do elemento*/
+}
+
+/* tecnica de responsividade de vídeo / iframe */
+/* exibir video responsivo */
+.listagem-de-videos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.video-responsivo {
+  position: relative;
+  width: 100%;
+  padding-top: 52%;
+  border: 1px solid #ff0000;
+}
+.video-responsivo iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }

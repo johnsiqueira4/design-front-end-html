@@ -1,28 +1,34 @@
 {
     "comentarios": [
         {
-            "texto": "Texto 1",
-            "autor": "Fulano 1"
+            "texto": "asuhd  sadafsfa sdafsf asd sdd  jihjwi hiwqh iwh iwhgiphgiwpghwip ghwi",
+            "autor": "Fulano 1",
+            "seguidores": "1000"
         },
         {
             "texto": "Texto 2",
-            "autor": "Fulano 2"
+            "autor": "Fulano 2",
+            "seguidores": "2000"
         },
         {
             "texto": "Texto 3",
-            "autor": "Fulano 3"
+            "autor": "Fulano 3",
+            "seguidores": "3000"
         },
         {
             "texto": "Texto 4",
-            "autor": "Fulano 4"
+            "autor": "Fulano 4",
+            "seguidores": "4000"
         },
         {
             "texto": "Texto 5",
-            "autor": "Fulano 5"
+            "autor": "Fulano 5",
+            "seguidores": "5000"
         },
         {
             "texto": "Texto 6",
-            "autor": "Fulano 6"
+            "autor": "Fulano 6",
+            "seguidores": "6000"
         }
     ]
 }

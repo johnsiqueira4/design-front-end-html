@@ -60,7 +60,33 @@
   
   article section ul li {
     list-style: none;
-    border-bottom: 1px dashed rgb(85, 85, 85);
+    border-top: 1px dashed rgb(85, 85, 85);
     padding: 20px 0;
+  }
+
+  article section ul li.primeira {
+    border-top: 0;
+  }
+
+  article section ul li span {
+    background: #333;
+    border: 1px solid #fff;
+    font-size: 10px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+  }
+
+  article section ul li span.seguidores {
+    background: darkgray;
+  }
+
+  article section ul li span.texto {
+    background: #fff;
+    display: block;
+    color: #333;
+    padding: 20px;
+    margin: 0;
   }
   
